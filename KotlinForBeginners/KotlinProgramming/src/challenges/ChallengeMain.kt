@@ -3,7 +3,16 @@ package challenges
 import kotlin.random.Random
 
 fun main(args: Array<String>) {
-    conditionalsChallenge()
+//    conditionalsChallenge()
+    loopsChallenge()
+}
+
+fun loopsChallenge() {
+    var sum = 0L
+    for (i in 100..100000L) {
+        sum += i
+    }
+    println(sum)
 }
 
 fun conditionalsChallenge() {
