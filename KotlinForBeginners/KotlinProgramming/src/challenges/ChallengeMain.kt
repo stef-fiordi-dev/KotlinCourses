@@ -4,7 +4,20 @@ import kotlin.random.Random
 
 fun main(args: Array<String>) {
 //    conditionalsChallenge()
-    loopsChallenge()
+//    loopsChallenge()
+    basicsRecapChallenge()
+}
+
+fun basicsRecapChallenge() {
+    val books = arrayListOf("Harry Potter", "Lord of the Rings", "1984", "Animal Farm")
+    for (book in books) {
+        if (book.contains('e')) {
+            for (c in book) {
+                println(c)
+            }
+            println()
+        }
+    }
 }
 
 fun loopsChallenge() {
