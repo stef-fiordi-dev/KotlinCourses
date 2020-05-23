@@ -2,10 +2,43 @@ package challenges
 
 import kotlin.random.Random
 
+class Book(val title: String, val author: String, val year: Int, var isBorrowed: Boolean) {
+
+    fun borrowBook() {
+        if (!isBorrowed) {
+            isBorrowed = true
+        } else {
+            println("Sorry, the book is already borrowed.")
+        }
+    }
+
+    fun returnBook() {
+        if (isBorrowed) {
+            isBorrowed = false
+        } else {
+            println("The book was not borrowed so it cannot be returned.")
+        }
+    }
+
+    fun printInfo() {
+        println("Title: $title")
+        println("Author: $author")
+        println("Year: $year")
+        println("Borrowed: $isBorrowed")
+    }
+}
+
 fun main(args: Array<String>) {
 //    conditionalsChallenge()
 //    loopsChallenge()
-    basicsRecapChallenge()
+//    basicsRecapChallenge()
+    classesChallenge()
+}
+
+fun classesChallenge() {
+    val book = Book("The Martian", "Andy Weir", 2011, false);
+    book.borrowBook()
+    book.printInfo()
 }
 
 fun basicsRecapChallenge() {
