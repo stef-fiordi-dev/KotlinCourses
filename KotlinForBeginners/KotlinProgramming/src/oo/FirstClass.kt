@@ -1,34 +1,20 @@
 package oo
 
-import java.util.*
-
-class Person(val name: String, val age: Int) {
-
-    init {
-        println("Object was created")
-    }
-
-    fun speak() {
-        println("Hello!")
-    }
-
-    fun greet(name: String) {
-        println("Hello $name!")
-    }
-
-    fun getYearOfBirth() = 2016 - age
-}
-
-fun main(args: Array<String>) {
-    val person = Person("Jack", 17)
-
-    person.speak()
-    person.greet("World")
-    println(person.getYearOfBirth())
-
-    println(person.name)
-    println(person.age)
-}
+//class House(val height: Double, val color: String, val price: Int = 50000) {
+//    fun print() {
+//        println("House [height: $height, color: $color, price: $price]")
+//    }
+//}
+//
+//fun main(args: Array<String>) {
+//    val house = House(height = 4.5, color = "Blue", price = 150000)
+//    val redHouse = House(color = "Red", price = 200000, height = 5.0)
+//    val yellowHouse = House(color = "Yellow", height = 2.5)
+//
+//    house.print()
+//    redHouse.print()
+//    yellowHouse.print()
+//}
 
 //class Person {
 //    var name: String = "Sarah"
