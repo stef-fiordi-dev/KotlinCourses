@@ -1,0 +1,4 @@
+This file's only purpose is to be read by a Kotlin program.
+Maybe you can write something else here.
+But there's no point in doing it.
+That's it!
